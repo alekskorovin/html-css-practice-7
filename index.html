@@ -33,8 +33,73 @@
                 <a id="cvs" class="anchor" href="#cvs" aria-hidden="true"><span aria-hidden="true"
                                                                                           class="octicon octicon-link"></span>Системы контроля версий.</a>
             </h2>
+            <p>
+                С помощью систем контроля версий возможо скачать самую последнюю версию проекта либо какую-то из предыдущих версий. Перед тем как начинать работу с проектом необходимо скачать последнюю версию, сделать изменения и затем сделать коммит (сохранить изменения) и пуш (отправить изменения в удалённый репозиторий).
+            </p>
+            <p>
+                Последовательность операций:
+            </p>
+            <ol>
+                <li><b>получить</b> (pull, update) &mdash; взять последнюю версию кода проекта.</li>
+                <li>сделать правки в коде проекта.</li>
+                <li><b>закомитить</b> (commit) &mdash; утвердить изменения: написать комментарий к изменениям, выделить файлы которые меняются.</li>
+                <li><b>отправить</b> (push) &mdash; отправить изменения в репозиторий.</li>
+            </ol>
             <h3>Работа с репозиторием</h3>
-            <h3>Первый update и commit</h3>
+            <p>Когда репозиторий проекта уже существует, первое что нам надо узнать:</p>
+            <ol>
+                <li>Какой URL репозитория?</li>
+                <li>Есть ли у моего пользователя доступ к этому репозиторию? И если есть, есть ли доступ на запись?</li>
+            </ol>
+            <h3>Первый pull (update)</h3>
+            <div class="task">
+                <h3>Задание #1.1</h3>
+                <ol>
+                    <li>На диске или рабочем столе создать папку <b>mobi</b>.</li>
+                    <li>
+                        Скопировать URL репозитория:
+                        <br/>
+                        <code>https://github.com/alekskorovin/mobi</code>
+                    </li>
+                    <li>Открыть установленную ранее программу SourceTree.</li>
+                    <li>
+                        Нажать кнопку <b>Клонировать / создать</b>.
+                        <br/>
+                        <img src="images/sourcetree-clone-create.png" alt="Нажать кнопку Клонировать / создать."/>
+                    </li>
+                    <li>
+                        Вставить скопированный ранее адрес репозитория в поле <b>Исходный путь / URL:</b>
+                        <br/>
+                        <img src="images/sourcetree-clone-create-url.png" alt="Исходный путь  / URL к репозиторию"/>
+                    </li>
+                    <li>
+                        Заменить автоматически сгенерированный путь на
+                         путь к созданной ранее пустой папке <b>mobi</b> в поле <b>Целевой путь</b>:
+                        <br/>
+                        <img src="images/sourcetree-clone-create-path.png" alt="Целевой путь"/>
+                    </li>
+                    <li>
+                        После указания правильного пути к пустой папке <b>mobi</b> нажать кнопку <b>Клонировать</b>:
+                        <br/>
+                        <img src="images/sourcetree-clone-create-path-clone.png" alt="Клонировать"/>
+                    </li>
+                    <li>
+                        После клонирования репозитория в папку <b>mobi</b> нажать на название ветки <b>master</b>:
+                        <br/>
+                        <img src="images/sourcetree-clone-create-path-clone-master.png" alt="Открыть ветку master"/>
+                    </li>
+                    <li>
+                        Обратить внимание на последний коммит:
+                        <br/>
+                        <img src="images/sourcetree-clone-last-commit.png" alt="Последний коммит"/>
+                    </li>
+                    <li>
+                        Открыть папку <b>mobi</b> и убедиться что в ней появился файл <b>index.html</b>
+                        <br/>
+                        <img src="images/sourcetree-cloned-html.png" alt="Появился файл index.html"/>
+                    </li>
+                </ol>
+            </div>
             <h3>Делаем общую страницу</h3>
             <h3>Создание своего репозитория и публикация сайта на GitHub Pages</h3>
 
@@ -42,6 +107,8 @@
                 <a id="tooltip" class="anchor" href="#tooltip" aria-hidden="true"><span aria-hidden="true"
                                                                                 class="octicon octicon-link"></span>Компонент Tooltip.</a>
             </h2>
+            <!-- http://qtip2.com/demos#positioning-zindex -->
+            <!-- http://jsfiddle.net/qTip2/zok1Lyzo/ -->
             <h2>
                 <a id="dropdown" class="anchor" href="#dropdown" aria-hidden="true"><span aria-hidden="true"
                                                                                 class="octicon octicon-link"></span>Компонент Dropdown.</a>
