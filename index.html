@@ -100,8 +100,108 @@
                     </li>
                 </ol>
             </div>
+            <p>
+                После того как последняя версия кода проекта получена можно делать правки кода.
+            </p>
             <h3>Делаем общую страницу</h3>
-            <h3>Создание своего репозитория и публикация сайта на GitHub Pages</h3>
+            <div class="task">
+                <h3>Задание #1.2</h3>
+                <ol>
+                    <li>По очереди делаются следующие шаги:
+                        <ul>
+                            <li>
+                                Первый разработчик находит <b>div</b> с классом со своим именем, например <code class="html">class="team-member-arina"</code>, и заполняет содержимое двух вложенных <b>div-ов</b>: <code class="html">&lt;div class="team-member-name"&gt;&lt;/div&gt;</code>
+                            </li>
+                            <li>
+                                Сохраняет файл.
+                            </li>
+                            <li>
+                                Открывает <b>SourceTree</b> и нажимает на строчку <b>Незакомиченные изменения</b>:
+                                <br/>
+                                <img src="images/sourcetree-changers.png" alt="Незакомиченные изменения"/>
+                            </li>
+                            <li>
+                                Нажимает на чекбокс <b>Файлы не в индексе</b>:
+                                <br/>
+                                <img src="images/sourcetree-changers-filex-not-in-index.png" alt="Файлы не в индексе"/>
+                            </li>
+                            <li>
+                                Нажимает на кнопку <b>Закоммитить</b>
+                                <br />
+                                <img src="images/sourcetree-changers-filex-commit.png" alt="Закоммитить"/>
+                            </li>
+                            <li>
+                                Добавляет осмысленный комментарий к коммиту и нажимает кнопку <b>Закоммитить</b>:
+                                <br/>
+                                <img src="images/sourcetree-changers-filex-make-commit.png" alt="Добавить комментарий и закоммитить"/>
+                            </li>
+                            <li>
+                                Нажимает кнопку <b>Отправить</b> чтобы отправить изменения на удалённый сервер GitHub:
+                                <br/>
+                                <img src="images/sourcetree-changers-filex-make-commit-push.png" alt="отправить изменения на удалённый сервер GitHub"/>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        Следующий разработчик нажимает на кнопку <b>Получить</b> для получения последней версии с изменениями и проделывает все шаги из предыдущего пункта.
+                        <br/>
+                        <img src="images/sourcetree-get-changes.png" alt="Получить для получения последней версии с изменениями"/>
+                    </li>
+                </ol>
+            </div>
+            <p>
+                После того как все разработчики внесли изменения есть возможность опубликовать эту страницу в интернете.
+            </p>
+            <p>
+                Для этого последний кто делал правки делает следующее:
+            </p>
+            <ul>
+                <li>
+                    Нажать правой кнопкой на название ветки <b>master</b> и выбрать <b>Переименовать master...</b>
+                    <br/>
+                    <img src="images/sourcetree-master-rename.png" alt="Переименовать master..."/>
+                </li>
+
+                <li>
+                    Ввести название ветки <code>gh-pages</code> и нажать <b>ОК</b>
+                    <br/>
+                    <img src="images/sourcetree-master-rename.-to-gh-pages.png" alt="Переименовать в gh-pages и нажать OK"/>
+                </li>
+                <li>
+                    Отправить изменения на сервер с помощью кнопки <b>Отправить</b>:
+                    <br/>
+                    <img src="images/sourcetree-master-rename.-to-gh-pages-push.png" alt="Отправить изменения на сервер"/>
+                </li>
+                <li>
+                    Теперь по адресу <a href="https://alekskorovin.github.io/mobi/index.html">https://alekskorovin.github.io/mobi/index.html</a> должна появиться опубликованная страница.
+                </li>
+            </ul>
+            <h3>Создание собственного репозитория на GitHub</h3>
+            <ol>
+                <li>
+                    Залогиниться на GitHub, зайти на главную страницу и нажать кнопку <b>New repository</b> в правой колонке:
+                    <br/>
+                    <img src="images/github-new-repository.png" alt="New repository"/>
+                </li>
+                <li>
+                    Ввести название своего репозитория и нажать кнопку <b>Create repository</b>:
+                    <br/>
+                    <img src="images/github-new-repository-test-repo.png" alt="Create repository"/>
+                </li>
+                <li>
+                    После переадресации на страницу репозитория, можно увидить URL репозитория <code>https://github.com/alekskorovin/test-repo</code> (в вашем случае будет другое имя) и использовать его для клонирования и дальнейшей работы как было описано в предыдущих пунктах.
+                    <br/>
+                    <img src="images/github-new-repository-test-repo-created.png" alt="Новый репозиторий доступен по адресу https://github.com/alekskorovin/test-repo"/>
+                </li>
+                <li>
+                    Надо создать пустую папку, склонировать туда репозиторий, т.к. он пустой то в папке ничего не появится.
+                </li>
+                <li>
+                    Добавить в папку файлы и закомитить их, затем отправить на сервер, после этого они появятся на GitHub-е.
+                </li>
+            </ol>
+
 
             <h2>
                 <a id="tooltip" class="anchor" href="#tooltip" aria-hidden="true"><span aria-hidden="true"
@@ -142,6 +242,7 @@
             <div class="task">
                 <h3>Домашнее задание</h3>
                 <ol>
+                    <li>Создать собственный репозиторий с проектом <b>mobi</b> и прислать ссылку в Slack.</li>
                 </ol>
             </div>
 
