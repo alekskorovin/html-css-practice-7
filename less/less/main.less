@@ -1,0 +1,49 @@
+@import 'typography.less';
+@import 'colors.less';
+
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+@padding-primary: 3rem;
+
+html {
+    font-size: @font-size-base;
+}
+body {
+    color: @color-text;
+    font-family: @font-family-primary;
+    font-size: @font-size-primary;
+}
+h1, h2 {
+    color: @color-headline;
+}
+button.primary {
+    background: @color-button-primary;
+    color: @color-button-text;
+}
+button.alternative {
+    background: @color-button-alternative;
+    color: @color-button-text;
+}
+main {
+    padding: @padding-primary;
+    background: @color-main-bg;
+    .box-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+}
+
+
+#header {
+  color: black;
+  .navigation {
+    font-size: 12px;
+  }
+  .logo {
+    width: 300px;
+    img {
+        max-height: 50px;
+    }
+  }
+}

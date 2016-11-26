@@ -597,6 +597,30 @@ span[data-tooltip] {
                 Можно сделать так чтобы цвет иконки наследовался от цвета текста.
             </p>
             <p data-height="504" data-theme-id="0" data-slug-hash="WoEpbG" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="Css SVG hover color" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/alekskorovin/pen/WoEpbG/">Css SVG hover color</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Генерация Source Map файла при работе с препроцессорами</h3>
+            <p>
+                Для полноценной работы необходимо настраивать окружение с помощью менеджеров задач таких как Gulp, а это отдельная тема для изучения.
+            </p>
+            <p>
+                Для демонстрации работы генерации Source Map файла:
+            </p>
+            <ol>
+                <li>Необходимо установить программу Koala &mdash; <a href="http://koala-app.com/">http://koala-app.com/</a>.</li>
+                <li>Скачать и распаковать проект <a href="less.zip">less.zip</a>.</li>
+                <li>Запусить программу Koala.</li>
+                <li>Выбрать папку с проектом <b>less</b>.</li>
+                <li>
+                    Кликнуть на main.less, выбрать чекбокс <b>Source Map</b> и нажать на кнопку <b>Compile</b>.
+                    <br/>
+                    <img src="images/koala-sourcemap.png" alt="Source map"/>
+                </li>
+                <li>
+                    Теперь в Google Chrome при наведении на элемент будет показываться строка со стилем в файле main.less а не main.css.
+                    <br/>
+                    <img src="images/koala-sourcemap-2.png" alt="Source map и Google Chrome"/>
+                </li>
+            </ol>
+
             <div class="task">
                 <h3>Домашнее задание</h3>
                 <ol>
